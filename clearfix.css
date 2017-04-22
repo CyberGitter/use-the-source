@@ -1,0 +1,14 @@
+/* 摘抄自Bootstrap注意：这个class是应用在需要被撑开高度的、包含着float元素的父框本身之上。 */
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	min-height: 0; /* support: IE7 */
+}
